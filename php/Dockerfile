@@ -29,3 +29,10 @@ RUN composer global require mayflower/php-codebrowser && ln -s ~/.composer/vendo
 RUN composer global require sebastian/phpcpd && ln -s ~/.composer/vendor/bin/phpcpd /usr/local/bin/phpcpd
 RUN composer global require phploc/phploc && ln -s ~/.composer/vendor/bin/phploc /usr/local/bin/phploc
 RUN composer global require squizlabs/php_codesniffer && ln -s ~/.composer/vendor/bin/phpcs /usr/local/bin/phpcs
+
+RUN curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+RUN apt-get install -y nodejs
+
+RUN curl -sL https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+RUN echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+RUN apt-get update && apt-get install yarn
