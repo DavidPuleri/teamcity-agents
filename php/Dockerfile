@@ -7,8 +7,8 @@ RUN apt-get update \
         wget \
     && add-apt-repository ppa:ondrej/php \
     && apt-get update -qq \
-    && apt-get install -y php7.3-cli php-pear php7.3-curl php7.3-dev \
-        php7.3-gd php7.3-mbstring php7.3-zip php7.3-mysql php7.3-xml php7.3-intl
+    && apt-get install -y php7.4-cli php-pear php7.4-curl php7.4-dev \
+        php7.4-gd php7.4-mbstring php7.4-zip php7.4-mysql php7.4-xml php7.4-intl
 
 RUN rm -rf /var/lib/apt/lists/* \
     && cd ~ \
