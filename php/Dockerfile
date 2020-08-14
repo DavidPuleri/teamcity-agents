@@ -2,6 +2,8 @@ FROM jetbrains/teamcity-agent
 
 ENV DEBIAN_FRONTEND noninteractive
 
+USER root
+
 RUN apt-get update \
     && apt-get install -y software-properties-common \
         wget \
