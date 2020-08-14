@@ -27,7 +27,7 @@ RUN composer global require 'phpunit/php-invoker=*'
 RUN composer global require 'phpunit/phpunit-selenium=*'
 RUN composer global require phpmd/phpmd && ln -s ~/.composer/vendor/bin/phpmd /usr/local/bin/phpmd
 RUN composer global require pdepend/pdepend && ln -s ~/.composer/vendor/bin/pdepend /usr/local/bin/pdepend
-RUN composer global require mayflower/php-codebrowser && ln -s ~/.composer/vendor/bin/phpcb /usr/local/bin/phpcb
+#RUN composer global require mayflower/php-codebrowser && ln -s ~/.composer/vendor/bin/phpcb /usr/local/bin/phpcb
 RUN composer global require sebastian/phpcpd && ln -s ~/.composer/vendor/bin/phpcpd /usr/local/bin/phpcpd
 RUN composer global require phploc/phploc && ln -s ~/.composer/vendor/bin/phploc /usr/local/bin/phploc
 RUN composer global require squizlabs/php_codesniffer && ln -s ~/.composer/vendor/bin/phpcs /usr/local/bin/phpcs
