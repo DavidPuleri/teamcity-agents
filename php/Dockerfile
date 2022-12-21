@@ -47,3 +47,5 @@ RUN npm install phantomjs@1.9.20
 RUN ln -s /node_modules/phantomjs/lib/phantom/bin/phantomjs /usr/local/bin/phantomjs
 
 RUN npm install -g semver
+
+RUN apt-get install -y openjdk-11-jdk
